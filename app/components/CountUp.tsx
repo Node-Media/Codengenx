@@ -24,6 +24,32 @@ export default function CountUp({
   const elementRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+    const currentElement = elementRef.current;
+    
+    const animateCount = () => {
+      const startTime = Date.now();
+      const endValue = end;
+
+      const updateCount = () => {
+        const now = Date.now();
+        const progress = Math.min((now - startTime) / duration, 1);
+
+        // Easing function for smooth animation (ease-out)
+        const easeOutQuart = 1 - Math.pow(1 - progress, 4);
+        const currentCount = easeOutQuart * endValue;
+
+        setCount(currentCount);
+
+        if (progress < 1) {
+          requestAnimationFrame(updateCount);
+        } else {
+          setCount(endValue); // Ensure we end exactly at the target
+        }
+      };
+
+      requestAnimationFrame(updateCount);
+    };
+    
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -36,40 +62,16 @@ export default function CountUp({
       { threshold: 0.5 } // Trigger when 50% visible
     );
 
-    if (elementRef.current) {
-      observer.observe(elementRef.current);
+    if (currentElement) {
+      observer.observe(currentElement);
     }
 
     return () => {
-      if (elementRef.current) {
-        observer.unobserve(elementRef.current);
+      if (currentElement) {
+        observer.unobserve(currentElement);
       }
     };
-  }, [hasAnimated]);
-
-  const animateCount = () => {
-    const startTime = Date.now();
-    const endValue = end;
-
-    const updateCount = () => {
-      const now = Date.now();
-      const progress = Math.min((now - startTime) / duration, 1);
-
-      // Easing function for smooth animation (ease-out)
-      const easeOutQuart = 1 - Math.pow(1 - progress, 4);
-      const currentCount = easeOutQuart * endValue;
-
-      setCount(currentCount);
-
-      if (progress < 1) {
-        requestAnimationFrame(updateCount);
-      } else {
-        setCount(endValue); // Ensure we end exactly at the target
-      }
-    };
-
-    requestAnimationFrame(updateCount);
-  };
+  }, [hasAnimated, end, duration]);
 
   const formatNumber = (num: number) => {
     return num.toFixed(decimals);

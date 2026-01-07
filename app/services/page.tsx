@@ -431,7 +431,7 @@ export default function ServicesPage() {
         <div className="absolute inset-0 bg-secondary-50"></div>
          <div className="max-w-4xl mx-auto text-center relative z-10">
           <h2 className="text-5xl md:text-6xl font-bold mb-8 text-secondary-900">
-            Let's Build Something Great
+            Let&apos;s Build Something Great
           </h2>
           <p className="text-xl text-secondary-500 mb-10">
             Ready to start your project or training journey? Get in touch for a free consultation.

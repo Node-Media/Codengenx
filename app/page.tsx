@@ -1,5 +1,6 @@
 import CountUp from './components/CountUp';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Home() {
   return (
@@ -238,9 +239,10 @@ export default function Home() {
               <div key={i} className="group relative overflow-hidden rounded-2xl bg-secondary-900 aspect-[4/5] flex items-end p-6 shadow-lg hover:shadow-2xl transition-shadow">
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent z-10"></div>
                 {/* Image Background */}
-                <img 
+                <Image 
                   src={course.img} 
                   alt={course.title}
+                  fill
                   className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
                 

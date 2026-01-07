@@ -36,12 +36,12 @@ export default function ContactPage() {
             Get In Touch
           </div>
           <h1 className="text-5xl md:text-7xl font-bold leading-tight mb-6 text-secondary-900">
-            Let's Start<br />
+            Let&apos;s Start<br />
             <span className="text-primary-600">Building</span> Together
           </h1>
           <p className="text-xl text-secondary-500 mb-8 leading-relaxed max-w-3xl mx-auto">
             Whether you have a project in mind, need training for your team, or want to explore R&D opportunities,
-            we're here to help you succeed.
+            we&apos;re here to help you succeed.
           </p>
         </div>
       </section>
@@ -53,7 +53,7 @@ export default function ContactPage() {
             {/* Contact Form */}
             <div className="bg-white p-8 rounded-3xl shadow-xl border border-secondary-100">
               <h2 className="text-3xl font-bold mb-4 text-secondary-900">Send Us a Message</h2>
-              <p className="text-secondary-500 mb-8">Fill out the form below and we'll get back to you within 24 hours.</p>
+              <p className="text-secondary-500 mb-8">Fill out the form below and we&apos;ll get back to you within 24 hours.</p>
 
               <form className="space-y-6">
                 <div>
@@ -84,7 +84,7 @@ export default function ContactPage() {
                 </div>
 
                 <div>
-                  <label className="block font-medium mb-2 text-secondary-700">I'm Interested In *</label>
+                  <label className="block font-medium mb-2 text-secondary-700">I&apos;m Interested In *</label>
                   <select className="w-full bg-secondary-50 border border-secondary-200 rounded-xl p-4 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:bg-white transition-all">
                     <option>Web Development</option>
                     <option>Mobile App Development</option>
@@ -182,7 +182,7 @@ export default function ContactPage() {
               <div className="bg-white border border-secondary-100 p-8 rounded-3xl shadow-sm">
                 <h3 className="text-xl font-bold mb-4 text-secondary-900">Career Opportunities</h3>
                 <p className="text-secondary-500 mb-4">
-                  We're always looking for talented developers, designers, and trainers to join our team.
+                  We&apos;re always looking for talented developers, designers, and trainers to join our team.
                 </p>
                 <a href="mailto:careers@codengenx.com" className="text-primary-600 font-bold hover:underline flex items-center gap-2">
                   View Open Positions <span>→</span>
@@ -198,7 +198,7 @@ export default function ContactPage() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4">R&D Projects</h2>
-            <p className="text-xl text-secondary-400">Exploring tomorrow's technology today</p>
+            <p className="text-xl text-secondary-400">Exploring tomorrow&apos;s technology today</p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-white/5 border border-white/10 p-8 rounded-2xl hover:bg-white/10 transition-colors">
@@ -293,7 +293,7 @@ export default function ContactPage() {
           </div>
           <div className="space-y-6">
             <div className="border border-secondary-200 p-6 rounded-2xl hover:shadow-lg transition-all">
-              <h3 className="text-lg font-bold mb-2 text-secondary-900">What's your typical project timeline?</h3>
+              <h3 className="text-lg font-bold mb-2 text-secondary-900">What&apos;s your typical project timeline?</h3>
               <p className="text-secondary-500">
                 Projects typically range from 8-16 weeks depending on complexity. We provide detailed timelines
                 during our discovery phase and maintain transparent communication throughout.
@@ -302,7 +302,7 @@ export default function ContactPage() {
             <div className="border border-secondary-200 p-6 rounded-2xl hover:shadow-lg transition-all">
               <h3 className="text-lg font-bold mb-2 text-secondary-900">Do you work with startups?</h3>
               <p className="text-secondary-500">
-                Absolutely! We've helped dozens of startups build MVPs and scale their products. We offer
+                Absolutely! We&apos;ve helped dozens of startups build MVPs and scale their products. We offer
                 flexible engagement models to work with various budgets.
               </p>
             </div>
@@ -323,7 +323,7 @@ export default function ContactPage() {
             <div className="border border-secondary-200 p-6 rounded-2xl hover:shadow-lg transition-all">
               <h3 className="text-lg font-bold mb-2 text-secondary-900">How do I get started with R&D collaboration?</h3>
               <p className="text-secondary-500">
-                Email our R&D team at rd@codengenx.com with your idea or challenge. We'll schedule a call
+                Email our R&D team at rd@codengenx.com with your idea or challenge. We&apos;ll schedule a call
                 to discuss feasibility, timeline, and partnership options.
               </p>
             </div>

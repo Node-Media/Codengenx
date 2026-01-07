@@ -119,7 +119,7 @@ export default function AboutPage() {
                   <time className="font-mono text-sm text-secondary-900">2023-Present</time>
                 </div>
                 <p className="text-secondary-500">
-                  Today, we're a trusted partner for businesses worldwide. Our training programs have helped launch
+                  Today, we&apos;re a trusted partner for businesses worldwide. Our training programs have helped launch
                    careers for 500+ developers, and we continue to push boundaries.
                 </p>
               </div>
