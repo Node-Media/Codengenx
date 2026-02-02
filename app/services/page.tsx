@@ -33,7 +33,7 @@ export default function ServicesPage() {
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary-400 opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-primary-500"></span>
             </span>
-             Our Expertise
+             Our Services
           </div>
           <h1 className="text-5xl md:text-7xl font-bold leading-tight mb-6 text-secondary-900">
             Solutions That<br />
@@ -431,18 +431,18 @@ export default function ServicesPage() {
         <div className="absolute inset-0 bg-secondary-50"></div>
          <div className="max-w-4xl mx-auto text-center relative z-10">
           <h2 className="text-5xl md:text-6xl font-bold mb-8 text-secondary-900">
-            Let&apos;s Build Something Great
+            Ready to Get Started?
           </h2>
           <p className="text-xl text-secondary-500 mb-10">
-            Ready to start your project or training journey? Get in touch for a free consultation.
+            Whether you need a development partner or want to upskill your team, we&apos;re here to help you succeed.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-primary-600 text-white px-10 py-4 text-lg rounded-full shadow-xl shadow-primary-600/30 hover:bg-primary-700 transition-all font-medium">
-              Request a Quote
-            </button>
-            <button className="bg-white border border-secondary-200 text-secondary-900 px-10 py-4 text-lg rounded-full hover:bg-secondary-50 transition-all font-medium">
-              View Training Schedule
-            </button>
+            <Link href="/contact" className="bg-primary-600 text-white px-10 py-4 text-lg rounded-full shadow-xl shadow-primary-600/30 hover:bg-primary-700 transition-all font-medium text-center">
+              Start a Project
+            </Link>
+            <Link href="/contact" className="bg-white border border-secondary-200 text-secondary-900 px-10 py-4 text-lg rounded-full hover:bg-secondary-50 transition-all font-medium text-center">
+              Explore Training
+            </Link>
           </div>
         </div>
       </section>

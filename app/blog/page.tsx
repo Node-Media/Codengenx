@@ -30,8 +30,11 @@ export default function BlogPage() {
       <section className="pt-32 pb-20 px-6 bg-gradient-to-b from-secondary-50 to-white">
         <div className="max-w-5xl mx-auto text-center">
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary-50 text-primary-700 rounded-full text-sm font-medium mb-6">
-             <span className="w-2 h-2 rounded-full bg-primary-500"></span>
-            Insights & Case Studies
+             <span className="relative flex h-2 w-2">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary-400 opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-primary-500"></span>
+            </span>
+            Case Studies
           </div>
           <h1 className="text-5xl md:text-7xl font-bold leading-tight mb-6 text-secondary-900">
             Product Dev<br />

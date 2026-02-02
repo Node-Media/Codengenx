@@ -77,39 +77,15 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="relative lg:h-[600px] flex items-center justify-center">
-              <div className="absolute inset-0 bg-gradient-to-tr from-primary-100 to-transparent rounded-3xl transform rotate-3"></div>
-              <div className="relative bg-white p-8 rounded-2xl shadow-2xl border border-secondary-100 w-full max-w-md">
-                <div className="space-y-6">
-                  <div className="flex items-center gap-4 p-4 bg-secondary-50 rounded-xl">
-                    <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center text-blue-600">
-                      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
-                    </div>
-                    <div>
-                      <h3 className="font-bold text-secondary-900">Web Development</h3>
-                      <p className="text-sm text-secondary-500">Modern & Scalable Solutions</p>
-                    </div>
-                  </div>
-                  <div className="flex items-center gap-4 p-4 bg-secondary-50 rounded-xl">
-                    <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center text-purple-600">
-                      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
-                    </div>
-                    <div>
-                      <h3 className="font-bold text-secondary-900">App Development</h3>
-                      <p className="text-sm text-secondary-500">iOS & Android Native Apps</p>
-                    </div>
-                  </div>
-                  <div className="flex items-center gap-4 p-4 bg-secondary-50 rounded-xl">
-                    <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center text-green-600">
-                      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.384-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg>
-                    </div>
-                    <div>
-                      <h3 className="font-bold text-secondary-900">Industrial Training</h3>
-                      <p className="text-sm text-secondary-500">Live Projects & Mentorship</p>
-                    </div>
-                  </div>
+            <div className="relative lg:h-[400px] lg:w-[600px] flex items-center justify-center">
+                <div className="relative w-full h-full rounded-3xl overflow-hidden transform rotate-3 bg-gradient-to-br p-8">
+                  <Image 
+                    src="/assets/hero_img.webp" 
+                    alt="Hero Image"
+                    fill
+                    className="object-contain"
+                  />
                 </div>
-              </div>
             </div>
           </div>
         </div>
