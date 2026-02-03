@@ -3,7 +3,15 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    @apply overflow-x-hidden;
+  }
+  
   body {
-    @apply bg-cream text-noir antialiased;
+    @apply bg-cream text-noir antialiased overflow-x-hidden;
+  }
+  
+  * {
+    @apply box-border;
   }
 }

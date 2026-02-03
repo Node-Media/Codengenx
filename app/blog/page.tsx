@@ -5,11 +5,11 @@ import Footer from '@/components/layout/Footer';
 
 export default function BlogPage() {
   return (
-    <main className="min-h-screen bg-white text-secondary-900 font-display">
+    <main className="min-h-screen bg-white text-secondary-900 font-display overflow-x-hidden">
       <Navbar />
 
       {/* Hero Section */}
-      <section className="pt-32 pb-20 px-6 bg-gradient-to-b from-secondary-50 to-white">
+      <section className="pt-32 pb-20 px-4 sm:px-6 bg-gradient-to-b from-secondary-50 to-white">
         <div className="max-w-5xl mx-auto text-center">
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary-50 text-primary-700 rounded-full text-sm font-medium mb-6">
              <span className="relative flex h-2 w-2">
@@ -30,7 +30,7 @@ export default function BlogPage() {
       </section>
 
       {/* Filter Tabs */}
-      <section className="py-4 px-6 border-b border-secondary-100 flex justify-center sticky top-[72px] z-40 bg-white/80 backdrop-blur-md">
+      <section className="py-4 px-4 sm:px-6 border-b border-secondary-100 flex justify-center sticky top-[72px] z-40 bg-white/80 backdrop-blur-md">
         <div className="bg-secondary-100/50 p-1.5 rounded-xl inline-flex flex-wrap justify-center gap-1">
           <button className="bg-white text-primary-600 px-6 py-2 rounded-lg font-bold shadow-sm">All Posts</button>
           <button className="text-secondary-600 hover:text-primary-600 hover:bg-white/50 px-6 py-2 rounded-lg transition-all font-medium">Web Development</button>
@@ -41,7 +41,7 @@ export default function BlogPage() {
       </section>
 
       {/* Featured Post */}
-      <section className="py-20 px-6 bg-white">
+      <section className="py-20 px-4 sm:px-6 bg-white">
         <div className="max-w-7xl mx-auto">
           <div className="bg-gradient-to-br from-primary-600 to-primary-700 text-white rounded-3xl overflow-hidden shadow-2xl relative">
              <div className="absolute top-0 right-0 w-96 h-96 bg-white/10 blur-3xl rounded-full transform translate-x-1/2 -translate-y-1/2"></div>
@@ -84,7 +84,7 @@ export default function BlogPage() {
       </section>
 
       {/* Case Studies Grid */}
-      <section className="py-20 px-6 bg-secondary-50">
+      <section className="py-20 px-4 sm:px-6 bg-secondary-50">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4 text-secondary-900">Product Development Case Studies</h2>
@@ -251,7 +251,7 @@ export default function BlogPage() {
       </section>
 
       {/* Technical Guides */}
-      <section className="py-20 px-6 bg-secondary-900 text-white">
+      <section className="py-20 px-4 sm:px-6 bg-secondary-900 text-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4">Technical Guides & Insights</h2>
@@ -340,7 +340,7 @@ export default function BlogPage() {
       </section>
 
       {/* Newsletter Signup */}
-      <section className="py-20 px-6 bg-gradient-to-br from-secondary-100 to-white">
+      <section className="py-20 px-4 sm:px-6 bg-gradient-to-br from-secondary-100 to-white">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-bold mb-6 text-secondary-900">Stay Updated</h2>
           <p className="text-xl text-secondary-500 mb-8">

@@ -25,8 +25,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${spaceGrotesk.variable} ${jetbrainsMono.variable} font-display`}>
+    <html lang="en" className="overflow-x-hidden">
+      <body className={`${spaceGrotesk.variable} ${jetbrainsMono.variable} font-display overflow-x-hidden`}>
         {children}
       </body>
     </html>

@@ -7,9 +7,9 @@ const stats = [
 
 export default function WelcomeSection() {
   return (
-    <section className="py-20 px-6 bg-secondary-900 text-white relative overflow-hidden">
+    <section className="py-20 px-4 sm:px-6 bg-secondary-900 text-white relative overflow-hidden">
       <div className="absolute top-0 right-0 w-1/2 h-full bg-primary-900/20 blur-3xl rounded-full transform translate-x-1/2"></div>
-      <div className="max-w-7xl mx-auto relative z-10">
+      <div className="max-w-7xl mx-auto relative z-10 w-full">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
             <h2 className="text-3xl md:text-4xl font-bold mb-6">Welcome to CodengenX</h2>

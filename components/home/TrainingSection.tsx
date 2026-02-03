@@ -37,8 +37,8 @@ const courses = [
 
 export default function TrainingSection() {
   return (
-    <section className="py-20 px-6 bg-white">
-      <div className="max-w-7xl mx-auto">
+    <section className="py-20 px-4 sm:px-6 bg-white">
+      <div className="max-w-7xl mx-auto w-full">
         <div className="text-center mb-16">
           <span className="text-primary-600 font-bold tracking-wider uppercase text-sm">
             Education

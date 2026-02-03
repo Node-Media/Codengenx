@@ -4,8 +4,8 @@ export default function Footer() {
   const socialLinks = ['Twitter', 'LinkedIn', 'Instagram', 'Facebook'];
   
   return (
-    <footer className="bg-secondary-900 text-white pt-20 pb-10 px-6">
-      <div className="max-w-7xl mx-auto">
+    <footer className="bg-secondary-900 text-white pt-20 pb-10 px-4 sm:px-6">
+      <div className="max-w-7xl mx-auto w-full">
         <div className="grid md:grid-cols-4 gap-12 mb-16">
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center gap-2 mb-6">

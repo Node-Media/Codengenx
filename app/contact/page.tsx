@@ -4,11 +4,11 @@ import Footer from '@/components/layout/Footer';
 
 export default function ContactPage() {
   return (
-    <main className="min-h-screen bg-white text-secondary-900 font-display">
+    <main className="min-h-screen bg-white text-secondary-900 font-display overflow-x-hidden">
       <Navbar />
 
       {/* Hero Section */}
-      <section className="pt-32 pb-20 px-6 bg-gradient-to-b from-secondary-50 to-white">
+      <section className="pt-32 pb-20 px-4 sm:px-6 bg-gradient-to-b from-secondary-50 to-white">
         <div className="max-w-5xl mx-auto text-center">
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary-50 text-primary-700 rounded-full text-sm font-medium mb-6">
              <span className="relative flex h-2 w-2">
@@ -29,7 +29,7 @@ export default function ContactPage() {
       </section>
 
       {/* Contact Options */}
-      <section className="py-20 px-6">
+      <section className="py-20 px-4 sm:px-6">
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12">
             {/* Contact Form */}
@@ -176,7 +176,7 @@ export default function ContactPage() {
       </section>
 
       {/* R&D Projects Showcase */}
-      <section className="py-20 px-6 bg-secondary-900 text-white">
+      <section className="py-20 px-4 sm:px-6 bg-secondary-900 text-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4">R&D Projects</h2>
@@ -232,7 +232,7 @@ export default function ContactPage() {
       </section>
 
       {/* Office Locations */}
-      <section className="py-20 px-6 bg-secondary-50">
+      <section className="py-20 px-4 sm:px-6 bg-secondary-50">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4 text-secondary-900">Our Locations</h2>
@@ -268,7 +268,7 @@ export default function ContactPage() {
       </section>
 
       {/* FAQ */}
-      <section className="py-20 px-6 bg-white">
+      <section className="py-20 px-4 sm:px-6 bg-white">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4 text-secondary-900">Frequently Asked Questions</h2>

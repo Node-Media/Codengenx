@@ -8,7 +8,7 @@ import TrainingSection from '@/components/home/TrainingSection';
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-white text-secondary-900 font-display">
+    <main className="min-h-screen bg-white text-secondary-900 font-display overflow-x-hidden">
       <Navbar />
       <HeroSection />
       <CoreValuesSection />

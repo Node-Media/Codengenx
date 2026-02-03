@@ -5,11 +5,11 @@ import CountUp from '@/components/ui/CountUp';
 
 export default function AboutPage() {
   return (
-    <main className="min-h-screen bg-white text-secondary-900 font-display">
+    <main className="min-h-screen bg-white text-secondary-900 font-display overflow-x-hidden">
       <Navbar />
 
       {/* Hero Section */}
-      <section className="pt-32 pb-20 px-6 bg-gradient-to-b from-secondary-50 to-white">
+      <section className="pt-32 pb-20 px-4 sm:px-6 bg-gradient-to-b from-secondary-50 to-white">
         <div className="max-w-5xl mx-auto text-center">
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary-50 text-primary-700 rounded-full text-sm font-medium mb-6">
             <span className="relative flex h-2 w-2">
@@ -30,7 +30,7 @@ export default function AboutPage() {
       </section>
 
       {/* Mission & Vision */}
-      <section className="py-20 px-6">
+      <section className="py-20 px-4 sm:px-6">
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12">
             <div className="bg-white p-12 rounded-3xl shadow-xl border border-secondary-100 hover:shadow-2xl transition-all">
@@ -54,7 +54,7 @@ export default function AboutPage() {
       </section>
 
       {/* Our Story */}
-      <section className="py-20 px-6 bg-secondary-50">
+      <section className="py-20 px-4 sm:px-6 bg-secondary-50">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-4xl font-bold mb-16 text-center text-secondary-900">Our Story</h2>
           <div className="space-y-12 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-secondary-300 before:to-transparent">
@@ -111,7 +111,7 @@ export default function AboutPage() {
       </section>
 
       {/* Stats */}
-      <section className="py-20 px-6 bg-white">
+      <section className="py-20 px-4 sm:px-6 bg-white">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-4xl font-bold mb-12 text-center text-secondary-900">By the Numbers</h2>
           <div className="grid md:grid-cols-4 gap-8">
@@ -136,7 +136,7 @@ export default function AboutPage() {
       </section>
       
       {/* Team CTA */}
-      <section className="py-20 px-6 bg-secondary-900 text-white relative overflow-hidden">
+      <section className="py-20 px-4 sm:px-6 bg-secondary-900 text-white relative overflow-hidden">
         <div className="absolute top-0 left-0 w-1/2 h-full bg-primary-900/20 blur-3xl rounded-full transform -translate-x-1/2"></div>
          <div className="max-w-4xl mx-auto text-center relative z-10">
           <h2 className="text-5xl font-bold mb-8">Join Our Journey</h2>

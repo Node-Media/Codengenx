@@ -8,15 +8,15 @@ interface StatCardProps {
 
 export default function StatCard({ end, suffix, label }: StatCardProps) {
   return (
-    <div>
-      <div className="flex items-baseline gap-1">
+    <div className="text-center sm:text-left">
+      <div className="flex items-baseline gap-1 justify-center sm:justify-start">
         <CountUp 
           end={end} 
           suffix={suffix || ''} 
-          className="text-3xl font-bold text-secondary-900" 
+          className="text-2xl sm:text-3xl font-bold text-secondary-900" 
         />
       </div>
-      <div className="text-sm text-secondary-500 font-medium">{label}</div>
+      <div className="text-xs sm:text-sm text-secondary-500 font-medium whitespace-nowrap">{label}</div>
     </div>
   );
 }
