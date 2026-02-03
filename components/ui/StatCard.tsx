@@ -8,8 +8,8 @@ interface StatCardProps {
 
 export default function StatCard({ end, suffix, label }: StatCardProps) {
   return (
-    <div className="text-center sm:text-left">
-      <div className="flex items-baseline gap-1 justify-center sm:justify-start">
+    <div className="text-center">
+      <div className="flex items-baseline gap-1 justify-center">
         <CountUp 
           end={end} 
           suffix={suffix || ''} 

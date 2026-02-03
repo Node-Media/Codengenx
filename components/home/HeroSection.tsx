@@ -28,11 +28,11 @@ export default function HeroSection() {
               <Button variant="secondary">View Programs</Button>
             </div>
 
-            <div className="pt-8 grid grid-cols-3 gap-4 sm:gap-8 border-t border-secondary-100">
+            <div className="pt-8 grid grid-cols-3 sm:flex sm:items-center gap-4 sm:gap-8 border-t border-secondary-100">
               <StatCard end={150} suffix="+" label="Projects Delivered" />
-              <div className="hidden sm:block w-px h-12 bg-secondary-200 mx-auto"></div>
+              <div className="hidden sm:block w-px h-12 bg-secondary-200"></div>
               <StatCard end={98} suffix="%" label="Client Satisfaction" />
-              <div className="hidden sm:block w-px h-12 bg-secondary-200 mx-auto"></div>
+              <div className="hidden sm:block w-px h-12 bg-secondary-200"></div>
               <StatCard end={500} suffix="+" label="Trained Developers" />
             </div>
           </div>
