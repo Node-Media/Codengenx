@@ -1,30 +1,12 @@
 import Link from 'next/link';
-import CountUp from '../components/CountUp';
+import Navbar from '@/components/layout/Navbar';
+import Footer from '@/components/layout/Footer';
+import CountUp from '@/components/ui/CountUp';
 
 export default function AboutPage() {
   return (
     <main className="min-h-screen bg-white text-secondary-900 font-display">
-      {/* Navigation */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-secondary-100">
-        <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <div className="w-10 h-10 bg-primary-600 rounded-lg flex items-center justify-center shadow-lg shadow-primary-600/20">
-              <span className="text-white font-mono text-lg font-bold">CX</span>
-            </div>
-            <span className="font-bold text-xl tracking-tight">CodengenX</span>
-          </div>
-          <div className="hidden md:flex items-center gap-8">
-            <Link href="/" className="text-secondary-600 hover:text-primary-600 font-medium transition-colors">Home</Link>
-            <Link href="/about" className="text-primary-600 font-bold transition-colors">About Us</Link>
-            <Link href="/services" className="text-secondary-600 hover:text-primary-600 font-medium transition-colors">Services</Link>
-            <Link href="/blog" className="text-secondary-600 hover:text-primary-600 font-medium transition-colors">Blog</Link>
-            <Link href="/contact" className="text-secondary-600 hover:text-primary-600 font-medium transition-colors">Contact</Link>
-            <button className="bg-primary-600 text-white px-6 py-2.5 rounded-full font-medium hover:bg-primary-700 transition-all shadow-lg shadow-primary-600/25">
-              Get Started
-            </button>
-          </div>
-        </div>
-      </nav>
+      <Navbar />
 
       {/* Hero Section */}
       <section className="pt-32 pb-20 px-6 bg-gradient-to-b from-secondary-50 to-white">
@@ -172,61 +154,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="py-12 px-6 bg-white border-t border-secondary-100">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid md:grid-cols-4 gap-8 mb-8">
-            <div>
-              <div className="flex items-center gap-2 mb-4">
-                <div className="w-8 h-8 bg-primary-600 rounded-lg flex items-center justify-center">
-                  <span className="text-white font-mono text-sm font-bold">CX</span>
-                </div>
-                <span className="font-bold text-xl text-secondary-900">CodengenX</span>
-              </div>
-              <p className="text-secondary-500 text-sm">
-                Web & app solutions with expert training to power your digital transformation.
-              </p>
-            </div>
-            <div>
-              <h4 className="font-bold mb-4 text-secondary-900">Services</h4>
-              <ul className="space-y-2 text-secondary-500">
-                <li><Link href="/services" className="hover:text-primary-600 transition-colors">Web Development</Link></li>
-                <li><Link href="/services" className="hover:text-primary-600 transition-colors">Mobile Apps</Link></li>
-                <li><Link href="/services" className="hover:text-primary-600 transition-colors">Training Programs</Link></li>
-                <li><Link href="/services" className="hover:text-primary-600 transition-colors">Product Development</Link></li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="font-bold mb-4 text-secondary-900">Company</h4>
-               <ul className="space-y-2 text-secondary-500">
-                <li><Link href="/about" className="hover:text-primary-600 transition-colors">About Us</Link></li>
-                <li><Link href="/blog" className="hover:text-primary-600 transition-colors">Blog</Link></li>
-                <li><Link href="/contact" className="hover:text-primary-600 transition-colors">Careers</Link></li>
-                <li><Link href="/contact" className="hover:text-primary-600 transition-colors">Contact</Link></li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="font-bold mb-4 text-secondary-900">Resources</h4>
-               <ul className="space-y-2 text-secondary-500">
-                <li><Link href="/blog" className="hover:text-primary-600 transition-colors">Case Studies</Link></li>
-                <li><Link href="/contact" className="hover:text-primary-600 transition-colors">R&D Projects</Link></li>
-                <li><Link href="/services" className="hover:text-primary-600 transition-colors">Training Catalog</Link></li>
-                <li><Link href="/contact" className="hover:text-primary-600 transition-colors">Support</Link></li>
-              </ul>
-            </div>
-          </div>
-          <div className="border-t border-secondary-100 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-secondary-400 text-sm font-mono">
-              © 2025 CodengenX. All rights reserved.
-            </p>
-            <div className="flex gap-6 text-secondary-400 text-sm">
-              <a href="#" className="hover:text-primary-600 transition-colors">Privacy</a>
-              <a href="#" className="hover:text-primary-600 transition-colors">Terms</a>
-              <a href="#" className="hover:text-primary-600 transition-colors">Security</a>
-            </div>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </main>
   );
 }

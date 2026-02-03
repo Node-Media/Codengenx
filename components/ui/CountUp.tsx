@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from 'react';
 
 interface CountUpProps {
   end: number;
-  duration?: number; // in milliseconds
+  duration?: number;
   suffix?: string;
   prefix?: string;
   className?: string;
@@ -43,7 +43,7 @@ export default function CountUp({
         if (progress < 1) {
           requestAnimationFrame(updateCount);
         } else {
-          setCount(endValue); // Ensure we end exactly at the target
+          setCount(endValue);
         }
       };
 
@@ -59,7 +59,7 @@ export default function CountUp({
           }
         });
       },
-      { threshold: 0.5 } // Trigger when 50% visible
+      { threshold: 0.5 }
     );
 
     if (currentElement) {
